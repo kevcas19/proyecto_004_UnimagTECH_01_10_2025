@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnimagTECH</title>
+    <link rel="icon" type="image/png" href="./img/escudo-fondo_claro.png">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+
+<body>
+
+    <div id="login-page">
+        <main class="login-container">
+            <section id="initial-view">
+                <header class="login-header">
+                    <img src="./img/Escudo_UnimagTECH.png" alt="Logo de UnimagTECH">
+                </header>
+                <div class="main-content">
+                    <button id="show-login-btn" type="button" class="submit-btn">
+                        Iniciar sesión con correo institucional Unimagdalena
+                    </button>
+                </div>
+                <footer class="login-footer">
+                    <p>Universidad del Magdalena © 2025</p>
+                </footer>
+            </section>
+            <section id="login-view" class="hidden">
+                <a href="#" id="back-arrow" class="back-arrow">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                </a>
+                <header class="login-header">
+                    <img src="./img/Escudo_UnimagTECH.png" alt="Logo de UnimagTECH">
+                </header>
+                <div class="login-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Correo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Contraseña" required>
+                    </div>
+                    <button id="acceder-btn" class="submit-btn">Acceder</button>
+                </div>
+                <footer class="login-footer">
+                    <p>Universidad del Magdalena © 2025</p>
+                </footer>
+            </section>
+        </main>
+    </div>
+
+    <div id="home-page" class="hidden">
+        <header class="main-header">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./img/escudo-fondo_claro.png" alt="Logo Universidad">
+                    <h1>UnimagTECH</h1>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#" class="active nav-link" data-target="home-page">Inicio</a></li>
+                        <li><a href="#" class="nav-link" data-target="laptops-page">Laptops</a></li>
+                        <li><a href="#" class="nav-link" data-target="computadores-page">Computadores</a></li>
+                        <li><a href="#" class="nav-link" data-target="salas-page">Salas de estudio</a></li>
+                        <li><a href="#" class="nav-link" data-target="puzzle-page">Puzzle</a></li>
+                    </ul>
+                </nav>
+                <div class="user-profile">
+                    <span class="material-symbols-outlined">account_circle</span>
+                    <span>Johan Robles</span>
+
+                    <div class="profile-dropdown hidden">
+                        <a href="#" class="nav-link" data-target="perfil-page">Perfil</a>
+                        <a href="#" class="nav-link" data-target="reservas-page">Reservas</a>
+                        <a href="#" class="logout-btn">Cerrar sesión</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero-section">
+                <div class="hero-text">
+                    <h2>¡Hola, Johan Robles!</h2>
+                    <h3>Reserva de espacios y equipos UnimagTECH: ¡Tu herramienta académica!</h3>
+                    <p>Facilitamos tu vida universitaria para que te enfoques en lo que realmente importa: tu estudio.
+                        Reserva lo que necesitas, cuando lo necesitas.</p>
+                    <p class="cta-links">
+                        Haz click en lo que necesites:
+                        <a href="#" class="nav-link" data-target="laptops-page">Laptops</a>
+                        <a href="#" class="nav-link" data-target="computadores-page">Computadores</a>
+                        <a href="#" class="nav-link" data-target="salas-page">Salas de estudio</a>
+                    </p>
+
+                </div>
+                <div class="hero-image">
+                    <img src="./img/student-coding.png" alt="Estudiante programando">
+                </div>
+            </section>
+
+            <section class="services-section">
+
+                <div class="services-image">
+                    <img src="./img/students-lab.png" alt="Estudiantes en laboratorio">
+                </div>
+
+                <div class="services-content">
+                    <div class="service-item">
+                        <span class="material-symbols-outlined">groups</span>
+                        <div>
+                            <h4>Salas de estudio</h4>
+                            <p>Visita espacios tranquilos para concentración individual o grupal.</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <span class="material-symbols-outlined">desktop_windows</span>
+                        <div>
+                            <h4>Computadores</h4>
+                            <p>Aprovecha salones dotados de computadores con software especializado para tus proyectos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <span class="material-symbols-outlined">laptop_mac</span>
+                        <div>
+                            <h4>Laptops</h4>
+                            <p>Adquiere computadores portátiles para trabajar en el lugar que desees.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <p>Universidad del Magdalena © 2025</p>
+        </footer>
+    </div>
+
+    <div id="laptops-page" class="hidden">
+
+        <header class="main-header">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./img/escudo-fondo_claro.png" alt="Logo Universidad">
+                    <h1>UnimagTECH</h1>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#" class="nav-link" data-target="home-page">Inicio</a></li>
+                        <li><a href="#" class="active nav-link" data-target="laptops-page">Laptops</a></li>
+                        <li><a href="#" class="nav-link" data-target="computadores-page">Computadores</a></li>
+                        <li><a href="#" class="nav-link" data-target="salas-page">Salas de estudio</a></li>
+                        <li><a href="#" class="nav-link" data-target="puzzle-page">Puzzle</a></li>
+                    </ul>
+                </nav>
+                <div class="user-profile">
+                    <span class="material-symbols-outlined">account_circle</span>
+                    <span>Johan Robles</span>
+
+                    <div class="profile-dropdown hidden">
+                        <a href="#" class="nav-link" data-target="perfil-page">Perfil</a>
+                        <a href="#" class="nav-link" data-target="reservas-page">Reservas</a>
+                        <a href="#" class="logout-btn">Cerrar sesión</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="laptops-hero">
+                <div class="laptops-hero-image">
+                    <img src="./img/laptops-hero.png" alt="Varias laptops en uso">
+                </div>
+                <div class="laptops-hero-text">
+                    <h2>Lleva tu potencial a todas partes.</h2>
+                    <p>La vida universitaria está en constante movimiento. Con una de nuestras laptops, tienes la
+                        libertad de estudiar, investigar y crear en el lugar que más te inspire, ya sea en la
+                        biblioteca, una cafetería o al aire libre.</p>
+                </div>
+            </section>
+
+            <section class="booking-process">
+
+                <div class="process-header">
+                    <h3>¡Estás a solo 4 pasos de tener tu laptop! Sigue el proceso para asegurar tu equipo:</h3>
+                </div>
+
+                <div class="process-grid">
+
+                    <div class="process-step">
+                        <h4>1. ¿Qué modelo de laptop necesitas?</h4>
+                        <p>Elige el modelo que más se acomode a tus necesidades:</p>
+                        <div class="selection-card">
+                            <label class="toggle-label" for="dell-inspiron">Dell Inspiron 3520</label>
+                            <img src="./img/img_pc_1.png" alt="Dell Inspiron 3520">
+                            <input type="radio" id="dell-inspiron" name="laptop_model" class="toggle-switch">
+                        </div>
+                        <div class="selection-card">
+                            <label class="toggle-label" for="macbook-pro">MacBook Pro M4</label>
+                            <img src="./img/img_pc_2.png" alt="MacBook Pro M4">
+                            <input type="radio" id="macbook-pro" name="laptop_model" class="toggle-switch">
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <h4>2. ¿Dónde la quieres recoger?</h4>
+                        <p>Dinos el punto de entrega que te quede más cómodo:</p>
+                        <div class="selection-card location">
+                            <label class="toggle-label" for="biblioteca">Biblioteca Germán Bula Meyer</label>
+                            <img src="./img/img_lugar_1.png" alt="Biblioteca">
+                            <input type="radio" id="biblioteca" name="location" class="toggle-switch">
+                        </div>
+                        <div class="selection-card location">
+                            <label class="toggle-label" for="sierra-nevada">Primer piso edificio</label>
+                            <label class="toggle-label" for="sierra-nevada">Sierra Nevada Norte</label>
+                            <img src="./img/img_lugar_2.png" alt="Edificio Sierra Nevada">
+                            <input type="radio" id="sierra-nevada" name="location" class="toggle-switch">
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <h4>3. Selecciona la fecha</h4>
+                        <p>Indícanos qué día necesitas el equipo. Revisa los días con disponibilidad:</p>
+                        <input type="text" class="date-picker" placeholder="Selecciona una fecha...">
+
+                    </div>
+
+                    <div class="process-step">
+                        <h4>4. Selecciona la hora</h4>
+                        <p>Escoge a partir de qué hora necesitas tu equipo:</p>
+                        <input type="text" class="time-picker" placeholder="Elige una hora..." disabled>
+
+                    </div>
+                </div>
+
+
+                <section class="reservation-action">
+                    <button disabled class="reserve-btn">
+                        <span class="material-symbols-outlined">bookmark</span>
+                        Reservar
+                    </button>
+                </section>
+
+        </main>
+
+        <footer class="main-footer">
+            <p>Universidad del Magdalena © 2025</p>
+        </footer>
+
+    </div>
+
+    <div id="computadores-page" class="hidden">
+        <header class="main-header">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./img/escudo-fondo_claro.png" alt="Logo Universidad">
+                    <h1>UnimagTECH</h1>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#" class="nav-link" data-target="home-page">Inicio</a></li>
+                        <li><a href="#" class="nav-link" data-target="laptops-page">Laptops</a></li>
+                        <li><a href="#" class="active nav-link" data-target="computadores-page">Computadores</a></li>
+                        <li><a href="#" class="nav-link" data-target="salas-page">Salas de estudio</a></li>
+                        <li><a href="#" class="nav-link" data-target="puzzle-page">Puzzle</a></li>
+                    </ul>
+                </nav>
+                <div class="user-profile">
+                    <span class="material-symbols-outlined">account_circle</span>
+                    <span>Johan Robles</span>
+                    <div class="profile-dropdown hidden">
+                        <a href="#" class="nav-link" data-target="perfil-page">Perfil</a>
+                        <a href="#" class="nav-link" data-target="reservas-page">Reservas</a>
+                        <a href="#" class="logout-btn">Cerrar sesión</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="laptops-hero">
+                <div class="laptops-hero-text">
+                    <h2>Tu espacio ideal para aprender y crear.</h2>
+                    <p>En nuestras salas de computadores, tienes todo lo que necesitas para estudiar, investigar y crear
+                        en un ambiente cómodo y equipado. Esto para apoyarte donde quiera que te lleve tu inspiración.
+                    </p>
+                </div>
+                <div class="laptops-hero-image">
+                    <img src="./img/computers-hero.jpg" alt="Sala de computadores de la universidad">
+                </div>
+            </section>
+
+            <section class="booking-process">
+                <div class="process-header">
+                    <h3>¡Estás a solo 3 pasos de tener tu computador! Sigue el proceso para asegurar tu equipo:</h3>
+                </div>
+
+                <div class="process-grid-3-cols">
+
+                    <div class="process-step">
+                        <h4>1. Seleccionar sala deseada</h4>
+                        <p>Escoge entre nuestras salas disponibles:</p>
+                        <div class="selection-card location">
+                            <label class="toggle-label" for="sala1-biblio">Sala de computo 1 Biblioteca</label>
+                            <img src="./img/img_aula_1.png" alt="Sala de computo 1">
+                            <input type="radio" id="sala1-biblio" name="sala_computo" class="toggle-switch">
+                        </div>
+                        <div class="selection-card location">
+                            <label class="toggle-label" for="sala2-biblio">Sala de computo 2 Biblioteca</label>
+                            <img src="./img/img_aula_2.png" alt="Sala de computo 2">
+                            <input type="radio" id="sala2-biblio" name="sala_computo" class="toggle-switch">
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <h4>2. Selecciona la fecha</h4>
+                        <p>Indícanos qué día necesitas el equipo. Revisa los días con disponibilidad:</p>
+                        <input type="text" class="date-picker" placeholder="Selecciona una fecha...">
+
+                    </div>
+
+                    <div class="process-step">
+                        <h4>3. Selecciona la hora</h4>
+                        <p>Escoge a partir de qué hora necesitas tu equipo:</p>
+                        <input type="text" class="time-picker" placeholder="Elige una hora..." disabled>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="reservation-action">
+                <button disabled class="reserve-btn">
+                    <span class="material-symbols-outlined">bookmark</span>
+                    Reservar
+                </button>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <p>Universidad del Magdalena © 2025</p>
+        </footer>
+    </div>
+
+    <div id="salas-page" class="hidden">
+        <header class="main-header">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./img/escudo-fondo_claro.png" alt="Logo Universidad">
+                    <h1>UnimagTECH</h1>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#" class="nav-link" data-target="home-page">Inicio</a></li>
+                        <li><a href="#" class="nav-link" data-target="laptops-page">Laptops</a></li>
+                        <li><a href="#" class="nav-link" data-target="computadores-page">Computadores</a></li>
+                        <li><a href="#" class="active nav-link" data-target="salas-page">Salas de estudio</a></li>
+                        <li><a href="#" class="nav-link" data-target="puzzle-page">Puzzle</a></li>
+                    </ul>
+                </nav>
+                <div class="user-profile">
+                    <span class="material-symbols-outlined">account_circle</span>
+                    <span>Johan Robles</span>
+                    <div class="profile-dropdown hidden">
+                        <a href="#" class="nav-link" data-target="perfil-page">Perfil</a>
+                        <a href="#" class="nav-link" data-target="reservas-page">Reservas</a>
+                        <a href="#" class="logout-btn">Cerrar sesión</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="laptops-hero">
+                <div class="laptops-hero-image">
+                    <img src="./img/rooms-hero.png" alt="Salas de estudio">
+                </div>
+                <div class="laptops-hero-text">
+                    <h2>Espacios que invitan a la calma.</h2>
+                    <p>Disfruta de un ambiente diseñado para concentrarte, relajarte y dar lo mejor de ti. Aquí, cada
+                        detalle está pensado para que solo te preocupes por aprender.</p>
+                </div>
+            </section>
+
+            <section class="booking-process">
+                <div class="process-header">
+                    <h3>¡Estás a solo 3 pasos de reservar tu sala de estudio! Sigue el proceso y asegura el espacio
+                        perfecto para concentrarte y crear:</h3>
+                </div>
+
+                <div class="process-grid-3-cols">
+
+                    <div class="process-step">
+                        <h4>1. Selecciona tu sala</h4>
+                        <p>Elige el espacio que mejor se adapte a tus necesidades: individual o grupal.</p>
+                        <div class="selection-card location">
+                            <label class="toggle-label" for="sala-individual">Sala Individual – Biblioteca</label>
+                            <img src="./img/img_sala_1.png" alt="Sala de estudio individual">
+                            <input type="radio" id="sala-individual" name="sala_estudio" class="toggle-switch">
+                        </div>
+                        <div class="selection-card location">
+                            <label class="toggle-label" for="sala-grupal">Sala grupal – Biblioteca</label>
+                            <img src="./img/img_sala_2.png" alt="Sala de estudio grupal">
+                            <input type="radio" id="sala-grupal" name="sala_estudio" class="toggle-switch">
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <h4>2. Elige la fecha</h4>
+                        <p>Indica el día en el que deseas usar la sala y revisa la disponibilidad fácilmente.</p>
+                        <input type="text" class="date-picker" placeholder="Selecciona una fecha...">
+
+                    </div>
+
+                    <div class="process-step">
+                        <h4>3. Define la hora</h4>
+                        <p>Escoge el horario que prefieras y asegura tu espacio para estudiar sin interrupciones.</p>
+                        <input type="text" class="time-picker" placeholder="Elige una hora..." disabled>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="reservation-action">
+                <button disabled class="reserve-btn">
+                    <span class="material-symbols-outlined">bookmark</span>
+                    Reservar
+                </button>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <p>Universidad del Magdalena © 2025</p>
+        </footer>
+    </div>
+
+    <div id="perfil-page" class="hidden">
+        <header class="main-header">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./img/escudo-fondo_claro.png" alt="Logo Universidad">
+                    <h1>UnimagTECH</h1>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#" class="nav-link" data-target="home-page">Inicio</a></li>
+                        <li><a href="#" class="nav-link" data-target="laptops-page">Laptops</a></li>
+                        <li><a href="#" class="nav-link" data-target="computadores-page">Computadores</a></li>
+                        <li><a href="#" class="nav-link" data-target="salas-page">Salas de estudio</a></li>
+                        <li><a href="#" class="nav-link" data-target="puzzle-page">Puzzle</a></li>
+                    </ul>
+                </nav>
+                <div class="user-profile">
+                    <span class="material-symbols-outlined">account_circle</span>
+                    <span>Johan Robles</span>
+                    <div class="profile-dropdown hidden">
+                        <a href="#" class="nav-link active" data-target="perfil-page">Perfil</a>
+                        <a href="#" class="nav-link" data-target="reservas-page">Reservas</a>
+                        <a href="#" class="logout-btn">Cerrar sesión</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="profile-container">
+            <div class="profile-card">
+                <header class="profile-card-header">
+                    <h2>Mi perfil</h2>
+                </header>
+                <div class="profile-card-body">
+                    <div class="profile-avatar">
+                        <img src="./img/img_JohanRobles.jpg" alt="Foto de perfil de Johan Robles">
+                    </div>
+                    <div class="profile-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Nombre:</span>
+                            <span class="detail-value">Johan Alberto Robles Solano</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Código:</span>
+                            <span class="detail-value">2021114010</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Correo:</span>
+                            <span class="detail-value">jrobless@unimagdalena.edu.co</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Facultad:</span>
+                            <span class="detail-value">Facultad de Ingeniería</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="main-footer">
+            <p>Universidad del Magdalena © 2025</p>
+        </footer>
+    </div>
+
+    <div id="reservas-page" class="hidden">
+        <header class="main-header">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./img/escudo-fondo_claro.png" alt="Logo Universidad">
+                    <h1>UnimagTECH</h1>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#" class="nav-link" data-target="home-page">Inicio</a></li>
+                        <li><a href="#" class="nav-link" data-target="laptops-page">Laptops</a></li>
+                        <li><a href="#" class="nav-link" data-target="computadores-page">Computadores</a></li>
+                        <li><a href="#" class="nav-link" data-target="salas-page">Salas de estudio</a></li>
+                        <li><a href="#" class="nav-link" data-target="puzzle-page">Puzzle</a></li>
+                    </ul>
+                </nav>
+                <div class="user-profile">
+                    <span class="material-symbols-outlined">account_circle</span>
+                    <span>Johan Robles</span>
+                    <div class="profile-dropdown hidden">
+                        <a href="#" class="nav-link" data-target="perfil-page">Perfil</a>
+                        <a href="#" class="nav-link active" data-target="reservas-page">Reservas</a>
+                        <a href="#" class="logout-btn">Cerrar sesión</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="reservations-container">
+            <h2>Mis reservas</h2>
+
+            <section class="reservations-section">
+                <h3>Reservas activas</h3>
+                <div class="reservations-list">
+                    <div class="reservation-card">
+                        <div class="card-icon"><span class="material-symbols-outlined">laptop_mac</span></div>
+                        <div class="card-details">
+                            <h4>Laptop: MacBook Pro M4</h4>
+                            <p><strong>Fecha:</strong> 25 de Septiembre, 2025</p>
+                            <p><strong>Hora:</strong> 10:00 AM</p>
+                            <p><strong>Lugar de recogida:</strong> Biblioteca Germán Bula Meyer</p>
+                        </div>
+                        <div class="card-action">
+                            <span class="status active">ACTIVA</span>
+                            <button class="cancel-btn">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reservations-section">
+                <h3>Historial de reservas</h3>
+                <div class="reservations-list">
+                    <div class="reservation-card">
+                        <div class="card-icon"><span class="material-symbols-outlined">groups</span></div>
+                        <div class="card-details">
+                            <h4>Sala de estudio grupal</h4>
+                            <p><strong>Fecha:</strong> 18 de Septiembre, 2025</p>
+                            <p><strong>Hora:</strong> 2:00 PM</p>
+                            <p><strong>Lugar:</strong> Biblioteca</p>
+                        </div>
+                        <div class="card-action">
+                            <span class="status completed">COMPLETADA</span>
+                        </div>
+                    </div>
+                    <div class="reservation-card">
+                        <div class="card-icon"><span class="material-symbols-outlined">desktop_windows</span></div>
+                        <div class="card-details">
+                            <h4>Sala de cómputo 1</h4>
+                            <p><strong>Fecha:</strong> 15 de Septiembre, 2025</p>
+                            <p><strong>Hora:</strong> 8:00 AM</p>
+                            <p><strong>Lugar:</strong> Biblioteca</p>
+                        </div>
+                        <div class="card-action">
+                            <span class="status completed">COMPLETADA</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <p>Universidad del Magdalena © 2025</p>
+        </footer>
+    </div>
+    
+    <div id="puzzle-page" class="hidden">
+        <header class="main-header">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./img/escudo-fondo_claro.png" alt="Logo Universidad">
+                    <h1>UnimagTECH</h1>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#" class="nav-link" data-target="home-page">Inicio</a></li>
+                        <li><a href="#" class="nav-link" data-target="laptops-page">Laptops</a></li>
+                        <li><a href="#" class="nav-link" data-target="computadores-page">Computadores</a></li>
+                        <li><a href="#" class="nav-link" data-target="salas-page">Salas de estudio</a></li>
+                        <li><a href="#" class="active nav-link" data-target="puzzle-page">Puzzle</a></li>
+                    </ul>
+                </nav>
+                <div class="user-profile">
+                    <span class="material-symbols-outlined">account_circle</span>
+                    <span>Johan Robles</span>
+                    <div class="profile-dropdown hidden">
+                        <a href="#" class="nav-link" data-target="perfil-page">Perfil</a>
+                        <a href="#" class="nav-link" data-target="reservas-page">Reservas</a>
+                        <a href="#" class="logout-btn">Cerrar sesión</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="puzzle-main-content">
+            <h2>Juego de Rompecabezas 🧩</h2>
+            <p>¡Ordena las piezas para revelar la imagen! Haz clic en una pieza junto al espacio vacío para moverla.</p>
+
+            <div class="puzzle-controls">
+                <h4>Elige una imagen:</h4>
+                <div class="image-selector">
+                    <button class="select-image-btn" data-src="./img/biblioteca.jpg">Biblioteca</button>
+                    <button class="select-image-btn" data-src="./img/img_sala_3.png">Sala Grupal</button>
+                    <button class="select-image-btn" data-src="./img/computers-hero.jpg">Sala Cómputo</button>
+                </div>
+            </div>
+            
+            <div class="game-area">
+                <div id="puzzle-container"></div>
+                
+                <div class="preview-container">
+                    <h4>Imagen Original</h4>
+                    <img id="preview-image" src="" alt="Guía del rompecabezas">
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="main-footer">
+            <p>Universidad del Magdalena © 2025</p>
+        </footer>
+    </div>
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
